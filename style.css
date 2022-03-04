@@ -108,7 +108,7 @@ img {
 .bg-color-light {
     background-color: var(--light-section);
 }
-.nav {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -152,9 +152,10 @@ img {
     cursor: pointer;
 }
 
-#banner-section {
+.banner-section {
     padding: 10rem;
     margin-top: 5rem;
+    background-image: url(./assets/1.jpg);
 }
 
 .fullheight {
@@ -240,7 +241,7 @@ button:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .department-top a {
     padding: 1.5rem;
@@ -371,6 +372,7 @@ ul.doctor-contact {
 .appoinment-left {
     padding: 6rem 3rem 6rem 6rem !important;
     color: white;
+    background-image: url(./assets/appoinment/01.jpg);
 }
 .dep-item {
     display: flex;
@@ -381,6 +383,7 @@ ul.doctor-contact {
 .appoinment-right {
     padding: 6rem 6rem 6rem 3rem !important;
     color: white;
+    background-image: url(./assets/appoinment/02.jpg);
 }
 .appoinment-right form {
     display: flex;
@@ -439,6 +442,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 footer {
     padding-top: 5rem;
     padding-bottom: 1rem;
+    background-image: url(./assets/footer/bg1.png);
 }
 .footer-top-item {
     display: flex;
@@ -469,7 +473,7 @@ footer {
     cursor: pointer;
 }
 /* RESPONSIVE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     h4 {
         font-size: 1.125rem;
     }
@@ -488,7 +492,7 @@ footer {
     button {
         padding: 1rem 0.75rem;
     }
-    #banner-section {
+    .banner-section {
         padding: 5rem 0;
     }
     .slogan h2 {
@@ -526,7 +530,63 @@ footer {
         border-bottom: 1px solid var(--gray);
     }
 }
-
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    h4 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    button {
+        padding: 1rem 0.75rem;
+    }
+    .banner-section {
+        padding: 5rem 0;
+    }
+    .slogan h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .slogan h1 {
+        margin-bottom: 2rem;
+        line-height: 1.25;
+    }
+    .appoinment-left {
+        padding: 6rem 6rem 6rem 3rem !important;
+    }
+    .footer-top-item:nth-child(2),
+    .footer-top-item:nth-child(3) {
+        align-items: flex-start;
+    }
+    .menu label {
+        display: block;
+    }
+    .menu ul {
+        position: fixed;
+        width: 70%;
+        height: 100vh;
+        background-color: var(--dark-blue);
+        top: 5rem;
+        right: 0;
+        text-align: left;
+        flex-direction: column;
+        display: none;
+    }
+    .menu-item {
+        color: var(--white);
+        margin-bottom: 0.5rem;
+        border-bottom: 1px solid var(--gray);
+    }
+}
 /* GRID SYSTEM */
 
 .row {
@@ -590,7 +650,7 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .col-xs-1 {
         width: 8.33%;
     }
@@ -640,6 +700,59 @@ footer {
     }
 
     .h-xs {
+        display: none;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .h-md {
         display: none;
     }
 }
